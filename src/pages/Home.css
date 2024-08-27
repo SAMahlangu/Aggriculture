@@ -1,0 +1,36 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 1200px; /* Restrict the maximum width */
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Cover the container while maintaining the aspect ratio */
+    border-radius: 10px;
+}
+
+.text-container {
+    max-width: 800px;
+}
+
+.text-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-container p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
