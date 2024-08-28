@@ -45,7 +45,7 @@ const Projects = () => {
             </div>
 		<div className="projects-grid">
 	                <div className="project-item">
-	                    <a href="https://huggingface.co/spaces/mdalakeys/diabeticsRec" target="_blank" rel="noopener noreferrer">
+	                    <a href="" target="_blank" rel="noopener noreferrer">
                         	<img src={project5} alt="Project 5" />
                 	    </a>
         	            <h2>Animal Count</h2>
@@ -57,7 +57,7 @@ const Projects = () => {
         	            <h2>Soil Analysis</h2>
 	                </div>
 			<div className="project-item">
-	                    <a href="https://huggingface.co/spaces/mdalakeys/diabeticsRec" target="_blank" rel="noopener noreferrer">
+	                    <a href="" target="_blank" rel="noopener noreferrer">
                         	<img src={project7} alt="Project 5" />
                 	    </a>
         	            <h2>Irrigation Analysis</h2>
