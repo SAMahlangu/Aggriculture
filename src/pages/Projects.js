@@ -19,25 +19,25 @@ const Projects = () => {
 
             <div className="projects-grid">
                 <div className="project-item">
-                    <a href="http://16.171.165.242/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://16.171.4.56/" target="_blank" rel="noopener noreferrer">
                         <img src={project1} alt="Project 1" />
                     </a>
                     <h2>Plant Disease Detection</h2>
                 </div>
                 <div className="project-item">
-                    <a href="http://13.53.174.112/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.61.4.203/" target="_blank" rel="noopener noreferrer">
                         <img src={project2} alt="Project 2" />
                     </a>
                     <h2>Plant Species Detection</h2>
                 </div>
                 <div className="project-item">
-                    <a href="http://13.60.88.8/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://16.171.193.38/" target="_blank" rel="noopener noreferrer">
                         <img src={project3} alt="Project 3" />
                     </a>
                     <h2>Plant Nutrient Difficiency</h2>
                 </div>
                 <div className="project-item">
-                    <a href="http://13.53.187.119/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://16.171.36.0/" target="_blank" rel="noopener noreferrer">
                         <img src={project4} alt="Project 4" />
                     </a>
                     <h2>Weeds Detection</h2>
@@ -51,7 +51,7 @@ const Projects = () => {
         	            <h2>Animal Count</h2>
 	                </div>
 			<div className="project-item">
-	                    <a href="http://13.61.35.167/" target="_blank" rel="noopener noreferrer">
+	                    <a href="http://16.171.137.44/" target="_blank" rel="noopener noreferrer">
                         	<img src={project6} alt="Project 6" />
                 	    </a>
         	            <h2>Soil Analysis</h2>
