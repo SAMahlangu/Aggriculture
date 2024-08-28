@@ -90,11 +90,14 @@ const Projects = () => {
         	            <h2>Aquaculture</h2>
 	    </div>
 	    
-	    <div className="project-item">
+	    <div className="projects-grid">
+	    	<div className="project-item">
 	                    <a href="http://fish-farming-chatbot.onrender.com/" target="_blank" rel="noopener noreferrer">
                         	<img src={project8} alt="Project 5" />
                 	    </a>
         	            <h2>Aquaculture</h2>
+	    	</div>
+	    
 	    </div>
         </div>
     );
