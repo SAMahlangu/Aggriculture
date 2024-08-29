@@ -37,7 +37,7 @@ const Projects = () => {
                     <h2>Plant Nutrient Difficiency</h2>
                 </div>
                 <div className="project-item">
-                    <a href="http://16.171.36.0/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.61.32.89/" target="_blank" rel="noopener noreferrer">
                         <img src={project4} alt="Project 4" />
                     </a>
                     <h2>Weeds Detection</h2>
