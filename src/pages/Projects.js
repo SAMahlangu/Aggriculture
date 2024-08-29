@@ -19,7 +19,7 @@ const Projects = () => {
 
             <div className="projects-grid">
                 <div className="project-item">
-                    <a href="http://16.171.4.56/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.51.121.87/" target="_blank" rel="noopener noreferrer">
                         <img src={project1} alt="Project 1" />
                     </a>
                     <h2>Plant Disease Detection</h2>
