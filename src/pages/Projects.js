@@ -51,7 +51,7 @@ const Projects = () => {
         	            <h2>Animal Count</h2>
 	                </div>
 			<div className="project-item">
-	                    <a href="http://16.171.137.44/" target="_blank" rel="noopener noreferrer">
+	                    <a href="http://16.170.205.41/" target="_blank" rel="noopener noreferrer">
                         	<img src={project6} alt="Project 6" />
                 	    </a>
         	            <h2>Soil Analysis</h2>
