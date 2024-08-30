@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import project1 from '../assets/images/damaged_leaves_1920x870.jpg';
-import project2 from '../assets/images/plants.jpg';
+
 import project3 from '../assets/images/Plant-nutrients.jpg';
 import project4 from '../assets/images/weed.jpg';
 import project5 from '../assets/images/pigsCount.jpg';
@@ -20,11 +20,11 @@ const Projects = () => {
                     <h2>Plant Disease Detection</h2>
                 </div>
                 <div className="project-item">
-                    <a href="http://16.171.2.67/" target="_blank" rel="noopener noreferrer">
-                        <img src={project2} alt="Plant Species Detection" />
+                    <a href="http://16.170.205.41/" target="_blank" rel="noopener noreferrer">
+                        <img src={project6} alt="Soil Analysis" />
                     </a>
-                    <h2>Plant Species Detection</h2>
-                </div>
+                    <h2>Soil Analysis</h2>
+                </div>                
                 <div className="project-item">
                     <a href="http://13.51.201.174/" target="_blank" rel="noopener noreferrer">
                         <img src={project3} alt="Plant Nutrient Deficiency" />
@@ -40,19 +40,14 @@ const Projects = () => {
             </div>
             <div className="projects-grid">
                 <div className="project-item">
-                    <a href="http://13.60.194.228/" target="_blank" rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
                         <img src={project5} alt="Animal Count" />
                     </a>
                     <h2>Animal Count</h2>
                 </div>
+                
                 <div className="project-item">
-                    <a href="http://16.170.205.41/" target="_blank" rel="noopener noreferrer">
-                        <img src={project6} alt="Soil Analysis" />
-                    </a>
-                    <h2>Soil Analysis</h2>
-                </div>
-                <div className="project-item">
-                    <a href="http://13.60.23.40/" target="_blank" rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
                         <img src={project7} alt="Irrigation Analysis" />
                     </a>
                     <h2>Irrigation Analysis</h2>
