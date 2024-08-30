@@ -9,96 +9,61 @@ import project6 from '../assets/images/soilAnalysis.jpg';
 import project7 from '../assets/images/irrigation.jpg';
 import project8 from '../assets/images/aquaculture.jpg';
 
-
-
-
-
 const Projects = () => {
     return (
         <div className="projects-container">
-
             <div className="projects-grid">
                 <div className="project-item">
                     <a href="http://13.51.121.87/" target="_blank" rel="noopener noreferrer">
-                        <img src={project1} alt="Project 1" />
+                        <img src={project1} alt="Plant Disease Detection" />
                     </a>
                     <h2>Plant Disease Detection</h2>
                 </div>
                 <div className="project-item">
-                    <a href="http://13.61.4.203/" target="_blank" rel="noopener noreferrer">
-                        <img src={project2} alt="Project 2" />
+                    <a href="http://16.171.2.67/" target="_blank" rel="noopener noreferrer">
+                        <img src={project2} alt="Plant Species Detection" />
                     </a>
                     <h2>Plant Species Detection</h2>
                 </div>
                 <div className="project-item">
                     <a href="http://13.51.201.174/" target="_blank" rel="noopener noreferrer">
-                        <img src={project3} alt="Project 3" />
+                        <img src={project3} alt="Plant Nutrient Deficiency" />
                     </a>
-                    <h2>Plant Nutrient Difficiency</h2>
+                    <h2>Plant Nutrient Deficiency</h2>
                 </div>
                 <div className="project-item">
                     <a href="http://13.61.32.89/" target="_blank" rel="noopener noreferrer">
-                        <img src={project4} alt="Project 4" />
+                        <img src={project4} alt="Weeds Detection" />
                     </a>
                     <h2>Weeds Detection</h2>
                 </div>
             </div>
-		<div className="projects-grid">
-	                <div className="project-item">
-	                    <a href="" target="_blank" rel="noopener noreferrer">
-                        	<img src={project5} alt="Project 5" />
-                	    </a>
-        	            <h2>Animal Count</h2>
-	                </div>
-			<div className="project-item">
-	                    <a href="http://16.170.205.41/" target="_blank" rel="noopener noreferrer">
-                        	<img src={project6} alt="Project 6" />
-                	    </a>
-        	            <h2>Soil Analysis</h2>
-	                </div>
-			<div className="project-item">
-	                    <a href="" target="_blank" rel="noopener noreferrer">
-                        	<img src={project7} alt="Project 5" />
-                	    </a>
-        	            <h2>Irrigation Analysis</h2>
-	                </div>
-			<div className="project-item">
-	                    <a href="http://fish-farming-chatbot.onrender.com/" target="_blank" rel="noopener noreferrer">
-                        	<img src={project8} alt="Project 5" />
-                	    </a>
-        	            <h2>Aquaculture</h2>
-	                </div>	
-	        </div>
-	    <div className="projects-grid">
-	    	<div className="project-item">
-	                    <a href="http://fish-farming-chatbot.onrender.com/" target="_blank" rel="noopener noreferrer">
-                        	<img src={project8} alt="Project 5" />
-                	    </a>
-        	            <h2>Aquaculture</h2>	    
-	    </div>
-	    <div className="project-item">
-	                    <a href="http://fish-farming-chatbot.onrender.com/" target="_blank" rel="noopener noreferrer">
-                        	<img src={project8} alt="Project 5" />
-                	    </a>
-        	            <h2>Aquaculture</h2>
-	    </div>
-	    
-	    <div className="project-item">
-	                    <a href="http://fish-farming-chatbot.onrender.com/" target="_blank" rel="noopener noreferrer">
-                        	<img src={project8} alt="Project 5" />
-                	    </a>
-        	            <h2>Aquaculture</h2>
-	    </div>
-	    
-	    <div className="projects-grid">
-	    	<div className="project-item">
-	                    <a href="http://fish-farming-chatbot.onrender.com/" target="_blank" rel="noopener noreferrer">
-                        	<img src={project8} alt="Project 5" />
-                	    </a>
-        	            <h2>Aquaculture</h2>
-	    	</div>
-	    
-	    </div>
+            <div className="projects-grid">
+                <div className="project-item">
+                    <a href="http://13.60.194.228/" target="_blank" rel="noopener noreferrer">
+                        <img src={project5} alt="Animal Count" />
+                    </a>
+                    <h2>Animal Count</h2>
+                </div>
+                <div className="project-item">
+                    <a href="http://16.170.205.41/" target="_blank" rel="noopener noreferrer">
+                        <img src={project6} alt="Soil Analysis" />
+                    </a>
+                    <h2>Soil Analysis</h2>
+                </div>
+                <div className="project-item">
+                    <a href="http://13.60.23.40/" target="_blank" rel="noopener noreferrer">
+                        <img src={project7} alt="Irrigation Analysis" />
+                    </a>
+                    <h2>Irrigation Analysis</h2>
+                </div>
+                <div className="project-item">
+                    <a href="http://fish-farming-chatbot.onrender.com/" target="_blank" rel="noopener noreferrer">
+                        <img src={project8} alt="Aquaculture" />
+                    </a>
+                    <h2>Aquaculture</h2>
+                </div>    
+            </div>
         </div>
     );
 };
