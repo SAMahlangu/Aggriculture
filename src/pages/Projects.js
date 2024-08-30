@@ -40,14 +40,14 @@ const Projects = () => {
             </div>
             <div className="projects-grid">
                 <div className="project-item">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.60.194.228/" target="_blank" rel="noopener noreferrer">
                         <img src={project5} alt="Animal Count" />
                     </a>
                     <h2>Animal Count</h2>
                 </div>
                 
                 <div className="project-item">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.60.23.40/" target="_blank" rel="noopener noreferrer">
                         <img src={project7} alt="Irrigation Analysis" />
                     </a>
                     <h2>Irrigation Analysis</h2>
