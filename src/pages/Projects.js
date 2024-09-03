@@ -14,25 +14,25 @@ const Projects = () => {
         <div className="projects-container">
             <div className="projects-grid">
                 <div className="project-item">
-                    <a href="http://13.51.121.87/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.61.10.233/" target="_blank" rel="noopener noreferrer">
                         <img src={project1} alt="Plant Disease Detection" />
                     </a>
                     <h2>Plant Disease Detection</h2>
                 </div>
                 <div className="project-item">
-                    <a href="http://16.170.205.41/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.60.248.45/" target="_blank" rel="noopener noreferrer">
                         <img src={project6} alt="Soil Analysis" />
                     </a>
                     <h2>Soil Analysis</h2>
                 </div>                
                 <div className="project-item">
-                    <a href="http://13.51.201.174/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.60.83.241/" target="_blank" rel="noopener noreferrer">
                         <img src={project3} alt="Plant Nutrient Deficiency" />
                     </a>
                     <h2>Plant Nutrient Deficiency</h2>
                 </div>
                 <div className="project-item">
-                    <a href="http://13.61.32.89/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://16.170.245.176/" target="_blank" rel="noopener noreferrer">
                         <img src={project4} alt="Weeds Detection" />
                     </a>
                     <h2>Weeds Detection</h2>
