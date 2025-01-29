@@ -14,7 +14,7 @@ const Projects = () => {
         <div className="projects-container">
             <div className="projects-grid">
                 <div className="project-item">
-                    <a href="http://13.60.217.200/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.60.156.208/" target="_blank" rel="noopener noreferrer">
                         <img src={project1} alt="Plant Disease Detection" />
                     </a>
                     <h2>Plant Disease Detection</h2>
