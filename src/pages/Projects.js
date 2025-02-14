@@ -14,25 +14,25 @@ const Projects = () => {
         <div className="projects-container">
             <div className="projects-grid">
                 <div className="project-item">
-                    <a href="http://13.60.156.208/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.61.3.13/" target="_blank" rel="noopener noreferrer">
                         <img src={project1} alt="Plant Disease Detection" />
                     </a>
                     <h2>Plant Disease Detection</h2>
                 </div>
                 <div className="project-item">
-                    <a href="http://16.171.249.109/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://16.170.233.77/" target="_blank" rel="noopener noreferrer">
                         <img src={project6} alt="Soil Analysis" />
                     </a>
                     <h2>Soil Analysis</h2>
                 </div>                
                 <div className="project-item">
-                    <a href="http://16.170.226.54/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.60.246.221/" target="_blank" rel="noopener noreferrer">
                         <img src={project3} alt="Plant Nutrient Deficiency" />
                     </a>
                     <h2>Plant Nutrient Deficiency</h2>
                 </div>
                 <div className="project-item">
-                    <a href="http://16.170.242.29/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.60.170.239/" target="_blank" rel="noopener noreferrer">
                         <img src={project4} alt="Weeds Detection" />
                     </a>
                     <h2>Weeds Detection</h2>
@@ -40,7 +40,7 @@ const Projects = () => {
             </div>
             <div className="projects-grid">
                 <div className="project-item">
-                    <a href="http://13.60.199.16/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://13.60.34.31/" target="_blank" rel="noopener noreferrer">
                         <img src={project5} alt="Animal Count" />
                     </a>
                     <h2>Animal Count</h2>
@@ -52,7 +52,7 @@ const Projects = () => {
                     <h2>Aquaculture</h2>
                 </div>
                 <div className="project-item">
-                    <a href="http://16.171.24.21/" target="_blank" rel="noopener noreferrer">
+                    <a href="http://16.171.41.76/" target="_blank" rel="noopener noreferrer">
                         <img src={project7} alt="Irrigation Analysis" />
                     </a>
                     <h2>Irrigation Analysis</h2>
