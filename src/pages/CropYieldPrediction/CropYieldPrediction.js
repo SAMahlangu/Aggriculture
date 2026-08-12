@@ -14,7 +14,7 @@ import './App.css';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
-const GOOGLE_MAPS_API_KEY = 'AIzaSyBTBOU0Bz2y3sVX9UUGMrVprkpIQxrbWlc';
+const GOOGLE_MAPS_API_KEY = '';
 
 const CropYieldPrediction = () => {
   const [crops, setCrops] = useState([]);
