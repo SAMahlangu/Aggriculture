@@ -1,0 +1,285 @@
+.crop-disease-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  padding: 20px 0;
+}
+
+.crop-disease-wrapper h1 {
+  color: white;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.crop-disease-wrapper h2 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Chatbox Styles */
+.chatbox {
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 2px solid #e0e0e0;
+}
+
+.message-user {
+  background-color: #4CAF50;
+  color: white;
+  display: inline-block;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message-bot {
+  background-color: #e8e8e8;
+  color: #333;
+  display: inline-block;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+/* Upload Section */
+.upload-section {
+  background: white;
+  border-radius: 8px;
+}
+
+.upload-box {
+  border: 3px dashed #4CAF50;
+  border-radius: 8px;
+  background-color: #f1f8f6;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.upload-box:hover {
+  border-color: #45a049;
+  background-color: #e8f5e9;
+}
+
+.upload-box p {
+  margin: 0;
+  font-size: 18px;
+  color: #4CAF50;
+  font-weight: 500;
+}
+
+.upload-box small {
+  color: #666;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Detection Results */
+.detection-results {
+  background-color: white;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+}
+
+.detection-results h4 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.result-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item strong {
+  color: #2E7D32;
+}
+
+.result-item p {
+  margin: 10px 0 0 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.result-item ul {
+  padding-left: 20px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.result-item li {
+  margin-bottom: 5px;
+}
+
+/* Input and Button Styles */
+input[type="text"].form-control {
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+input[type="text"].form-control:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+  border-color: #45a049;
+}
+
+.btn-primary:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Bot Message Content with Better Formatting */
+.bot-response-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #1b3a1b;
+}
+
+.bot-response-text strong {
+  display: block;
+  margin: 1rem 0 0.5rem 0;
+  color: #2d6a4f;
+  font-weight: 700;
+  font-size: 1.08em;
+  border-left: 4px solid #40916c;
+  padding-left: 0.75rem;
+  background-color: rgba(64, 145, 108, 0.05);
+  padding: 0.5rem 0 0.5rem 0.75rem;
+  border-radius: 4px;
+}
+
+.bot-response-text p {
+  margin: 0.4rem 0;
+  line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.bot-response-text div {
+  margin: 0.2rem 0;
+}
+
+/* Numbered lists in bot response */
+.bot-response-text div > div[style*="flex"] > span:first-child {
+  font-weight: 600;
+  color: #2d6a4f;
+  min-width: 2rem;
+}
+
+/* Bullet points */
+.bot-response-text div > div[style*="bullet"] {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Bot Message Content with Markdown Support */
+.bot-message-content {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.bot-message-content h4,
+.bot-message-content h5,
+.bot-message-content h6 {
+  margin: 0.7rem 0 0.4rem 0;
+  font-weight: 700;
+  color: #2d6a4f;
+  border-left: 3px solid #40916c;
+  padding-left: 0.5rem;
+}
+
+.bot-message-content strong {
+  color: #2d6a4f;
+  font-weight: 700;
+}
+
+.bot-message-content em {
+  color: #4a7c59;
+  font-style: italic;
+}
+
+.bot-message-content p {
+  margin: 0.4rem 0;
+  line-height: 1.5;
+}
+
+.bot-message-content ul,
+.bot-message-content ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.bot-message-content li {
+  margin: 0.3rem 0;
+  line-height: 1.5;
+}
+
+.bot-message-content code {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+  color: #c92a2a;
+}
+
+.bot-message-content blockquote {
+  border-left: 4px solid #40916c;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+  color: #4a7c59;
+  font-style: italic;
+}
+
+/* Loading Spinner */
+.spinner-border {
+  color: #4CAF50;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .crop-disease-wrapper {
+    padding: 10px 0;
+  }
+
+  .col-md-6 {
+    padding: 15px !important;
+  }
+
+  .chatbox {
+    max-height: 300px;
+  }
+
+  .message-user, .message-bot {
+    max-width: 100%;
+  }
+
+  .btn-primary {
+    margin-left: 5px;
+    padding: 8px 12px;
+  }
+}

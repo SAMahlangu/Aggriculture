@@ -1,0 +1,363 @@
+/* Water Quality Container */
+.water-quality-container {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - 200px);
+}
+
+.water-quality-left {
+    flex: 1;
+    min-width: 400px;
+}
+
+.water-quality-right {
+    flex: 1;
+    min-width: 350px;
+}
+
+/* Form Styles */
+.water-quality-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.water-quality-form h2 {
+    color: #00695C;
+    margin-bottom: 25px;
+    font-size: 24px;
+    border-bottom: 3px solid #00BCD4;
+    padding-bottom: 10px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input {
+    padding: 10px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #00BCD4;
+    box-shadow: 0 0 8px rgba(0, 188, 212, 0.2);
+    background-color: #f0f7fa;
+}
+
+.btn-predict {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #00695C 0%, #00897B 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 105, 92, 0.3);
+}
+
+.btn-predict:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 105, 92, 0.4);
+}
+
+.btn-predict:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Error Message */
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+    border-left: 4px solid #c62828;
+}
+
+/* Prediction Result */
+.prediction-result {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 4px solid #00BCD4;
+    box-shadow: 0 2px 8px rgba(0, 188, 212, 0.15);
+}
+
+.prediction-result h3 {
+    color: #00695C;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.prediction-result.potable {
+    border-left-color: #4caf50;
+}
+
+.prediction-result.not-potable {
+    border-left-color: #f44336;
+}
+
+.result-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.prediction-result.potable .result-text {
+    color: #4caf50;
+}
+
+.prediction-result.not-potable .result-text {
+    color: #f44336;
+}
+
+.confidence {
+    color: #666;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.recommendations {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.recommendations h4 {
+    color: #00695C;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.recommendations ul {
+    list-style-position: inside;
+    margin: 0;
+    padding-left: 15px;
+}
+
+.recommendations li {
+    color: #555;
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+/* Chat Section */
+.chat-section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.chat-section h2 {
+    color: #00695C;
+    margin: 0;
+    padding: 20px;
+    border-bottom: 3px solid #00BCD4;
+    font-size: 20px;
+}
+
+.chat-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.empty-chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #999;
+    text-align: center;
+    padding: 20px;
+}
+
+.chat-message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.chat-message.user {
+    justify-content: flex-end;
+}
+
+.chat-message.assistant {
+    justify-content: flex-start;
+}
+
+.message-content {
+    max-width: 80%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    word-wrap: break-word;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.chat-message.user .message-content {
+    background: linear-gradient(135deg, #00695C 0%, #00897B 100%);
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+.chat-message.assistant .message-content {
+    background: #f0f0f0;
+    color: #333;
+    border-bottom-left-radius: 2px;
+}
+
+.chat-input-form {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+    background: white;
+}
+
+.chat-input-form input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.chat-input-form input:focus {
+    outline: none;
+    border-color: #00BCD4;
+    box-shadow: 0 0 8px rgba(0, 188, 212, 0.2);
+}
+
+.chat-input-form button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #00695C 0%, #00897B 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chat-input-form button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 105, 92, 0.3);
+}
+
+.chat-input-form button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .water-quality-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .water-quality-left,
+    .water-quality-right {
+        min-width: auto;
+    }
+
+    .chat-section {
+        max-height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .water-quality-form,
+    .chat-section {
+        padding: 20px;
+    }
+
+    .message-content {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .water-quality-container {
+        padding: 10px;
+    }
+
+    .water-quality-form,
+    .chat-section {
+        padding: 15px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chat-container {
+        padding: 15px;
+    }
+
+    .message-content {
+        font-size: 13px;
+    }
+}
+
+/* Scrollbar styling */
+.chat-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+    background: #00BCD4;
+    border-radius: 4px;
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+    background: #0097a7;
+}

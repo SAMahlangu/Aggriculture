@@ -1,0 +1,43 @@
+/* Agriculture Theme - Minimal CSS overrides for all projects */
+
+/* Ensure all pages use the agriculture theme */
+.project-container {
+  background: linear-gradient(135deg, #1b3a1b 0%, #2d6a4f 50%, #40916c 100%);
+}
+
+/* Override any existing styles */
+html, body {
+  scroll-behavior: smooth;
+}
+
+.project-layout {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Ensure project cards are responsive */
+@media (max-width: 1024px) {
+  .project-layout {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Home and projects pages integration */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

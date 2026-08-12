@@ -7,31 +7,91 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #007BFF; /* Bootstrap primary color */
+/* Header Styles */
+.app-header {
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%);
     color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+    padding: 0;
+    box-shadow: 0 8px 32px rgba(0, 191, 255, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid rgba(0, 191, 255, 0.4);
 }
 
-nav {
-    background-color: #343a40; /* Bootstrap dark color */
-    padding: 10px;
-    text-align: center;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-nav a {
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.header-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.5px;
     color: white;
-    margin: 0 15px;
+}
+
+/* Navigation Styles */
+.header-nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-nav a:hover {
-    color: #007BFF; /* Bootstrap primary color */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 191, 255, 0.15);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    background-color: #00BFFF;
+}
+
+/* Old nav styles cleanup */
+nav {
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
 }
 
 main {

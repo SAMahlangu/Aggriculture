@@ -1,36 +1,305 @@
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-}
-
-.image-container {
     width: 100%;
-    max-width: 1200px; /* Restrict the maximum width */
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 500px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
     margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 1.2;
 }
 
-.image-container img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: cover; /* Cover the container while maintaining the aspect ratio */
-    border-radius: 10px;
+.hero-content > p:nth-of-type(1) {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
-.text-container {
-    max-width: 800px;
+.hero-description {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    opacity: 0.95;
 }
 
-.text-container h1 {
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.features-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* Projects Preview Section */
+.projects-preview-section {
+    padding: 80px 40px;
+    background-color: #f8f9fa;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.preview-content h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
 }
 
-.text-container p {
-    font-size: 1.2em;
+.preview-content > p {
+    font-size: 1.1em;
     color: #666;
+    margin-bottom: 30px;
     line-height: 1.6;
+}
+
+.projects-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.projects-list li {
+    padding: 15px 0;
+    padding-left: 30px;
+    font-size: 1.05em;
+    color: #444;
+    position: relative;
+    line-height: 1.6;
+}
+
+.projects-list li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: white;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.05em;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button.primary {
+    background-color: white;
+    color: #667eea;
+}
+
+.cta-button.secondary {
+    background-color: #667eea;
+    color: white;
+    margin-top: 20px;
+}
+
+.cta-button.secondary:hover {
+    background-color: #764ba2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+        min-height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content > p:nth-of-type(1) {
+        font-size: 1.2em;
+    }
+
+    .features-section,
+    .projects-preview-section {
+        padding: 50px 20px;
+    }
+
+    .features-section h2,
+    .projects-preview-section h2,
+    .cta-section h2 {
+        font-size: 1.8em;
+    }
+
+    .cta-section {
+        padding: 50px 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .card-image-container img {
+    transform: scale(1.05);
+}
+
+.project-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.project-card h3 {
+    font-size: 1.4em;
+    margin: 20px 20px 10px 20px;
+    color: #1a3a5c;
+    font-weight: 600;
+}
+
+.project-card p {
+    font-size: 0.95em;
+    color: #666;
+    margin: 0 20px 20px 20px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.project-button {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 20px 20px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.project-button:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
 }
